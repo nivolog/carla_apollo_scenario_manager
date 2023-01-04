@@ -1,0 +1,124 @@
+<root>
+    <traffic>
+        <actor id="0" autopilot="1">
+            <position>
+                <x>-58</x>
+                <y>1</y>
+                <z>0.3</z>
+            </position>
+            <rotation>
+                <yaw>0</yaw>
+            </rotation>
+        </actor>
+        <actor id="1" autopilot="1">
+            <position>
+                <x>-18.5</x>
+                <y>8.46</y>
+                <z>0.3</z>
+            </position>
+            <rotation>
+                <yaw>45</yaw>
+            </rotation>
+        </actor>
+        <actor id="2" autopilot="1">
+            <position>
+                <x>-6</x>
+                <y>-50</y>
+                <z>0.3</z>
+            </position>
+            <rotation>
+                <yaw>-268</yaw>
+            </rotation>
+        </actor>
+        <actor id="3" autopilot="1">
+            <position>
+                <x>-2.5</x>
+                <y>-56</y>
+                <z>0.3</z>
+            </position>
+            <rotation>
+                <yaw>-268</yaw>
+            </rotation>
+        </actor>
+        <actor id="4" autopilot="1">
+            <position>
+                <x>-1.9</x>
+                <y>-93</y>
+                <z>0.3</z>
+            </position>
+            <rotation>
+                <yaw>-268</yaw>
+            </rotation>
+        </actor>
+        <actor id="5" autopilot="1">
+            <position>
+                <x>18.6</x>
+                <y>13.85</y>
+                <z>0.3</z>
+            </position>
+            <rotation>
+                <yaw>-50</yaw>
+            </rotation>
+        </actor>
+        <actor id="6" autopilot="1">
+            <position>
+                <x>4.95</x>
+                <y>97.7</y>
+                <z>0.3</z>
+            </position>
+            <rotation>
+                <yaw>270</yaw>
+            </rotation>
+        </actor>
+        <actor id="7" autopilot="1">
+            <position>
+                <x>1.9</x>
+                <y>97.7</y>
+                <z>0.3</z>
+            </position>
+            <rotation>
+                <yaw>270</yaw>
+            </rotation>
+        </actor>
+        <actor id="8" autopilot="1">
+            <position>
+                <x>1.99</x>
+                <y>113.94</y>
+                <z>0.3</z>
+            </position>
+            <rotation>
+                <yaw>270</yaw>
+            </rotation>
+        </actor>
+        <actor id="9" autopilot="1">
+            <position>
+                <x>1.28</x>
+                <y>44.65</y>
+                <z>0.3</z>
+            </position>
+            <rotation>
+                <yaw>270</yaw>
+            </rotation>
+        </actor>
+    </traffic>
+    <ego>
+        <position>
+            <x>-65</x>
+            <y>1</y>
+            <z>0.3</z>
+        </position>
+        <rotation>
+            <yaw>0</yaw>
+        </rotation>
+    </ego>
+    <stop>
+        <position>
+            <x>7.9</x>
+            <y>-61.5</y>
+            <z>0.3</z>
+        </position>
+        <rotation>
+            <yaw>92</yaw>
+        </rotation>
+    </stop>
+</root>

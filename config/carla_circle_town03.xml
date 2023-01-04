@@ -1,0 +1,10 @@
+<root>
+    <simulator>Carla</simulator>
+    <host>172.17.0.1</host>
+    <port>2000</port>
+    <timeout>30.0</timeout>
+    <fps>30.0</fps>
+    <scenario>circle</scenario>
+    <path>maneuvers/config/carla_circle_town03.xml</path>
+    <prefix></prefix>
+</root>

@@ -1,0 +1,64 @@
+<root>
+    <traffic>
+        <actor id="0" autopilot="1">
+            <position>
+                <x>1283.0</x>
+                <y>-121.9</y>
+                <z>0.3</z>
+            </position>
+            <rotation>
+                <yaw>233</yaw>
+            </rotation>
+        </actor>
+        <actor id="1" autopilot="1">
+            <position>
+                <x>1250.5</x>
+                <y>-162.6</y>
+                <z>0.3</z>
+            </position>
+            <rotation>
+                <yaw>57</yaw>
+            </rotation>
+        </actor>
+        <actor id="2" autopilot="1">
+            <position>
+                <x>1262.1</x>
+                <y>-152.7</y>
+                <z>0.3</z>
+            </position>
+            <rotation>
+                <yaw>238</yaw>
+            </rotation>
+        </actor>
+        <actor id="3" autopilot="0">
+            <position>
+                <x>1259.4</x>
+                <y>-175.6</y>
+                <z>0.3</z>
+            </position>
+            <rotation>
+                <yaw>146</yaw>
+            </rotation>
+        </actor>
+    </traffic>
+    <ego>
+        <position>
+            <x>1253</x>
+            <y>-130.8</y>
+            <z>0.3</z>
+        </position>
+        <rotation>
+            <yaw>-14</yaw>
+        </rotation>
+    </ego>
+    <stop>
+        <position>
+            <x>1255.2</x>
+            <y>-163.9</y>
+            <z>0.3</z>
+        </position>
+        <rotation>
+            <yaw>240</yaw>
+        </rotation>
+    </stop>
+</root>
