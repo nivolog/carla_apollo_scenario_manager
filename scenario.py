@@ -30,7 +30,7 @@ class Scenario():
         self.recorder = DataRecorder()
 
         self.start = False
-        
+
     def load_scenario(self): #DONE
         if self.path is not None:
             path = self.path
@@ -63,9 +63,9 @@ class Scenario():
             print('Unsupported simulator "{}" provided'.format(self.kwargs['simulator']))
         
         #spawn traffic vehicles
-        self.API.spawn_traffic()
+        self.API.spawn_traffic(**self.kwargs)
         #spawn ego
-        self.API.spawn_vehicle()
+        self.API.spawn_ego(**self.kwargs)
         pass
     
     def launch_scenario(self): # TODO: Start moving vehicles, pass to planner routing request
