@@ -23,6 +23,7 @@ class Scenario():
         self.init_ego_position = [0,0,0,0]
 
         self.actors = []
+        self.traffic = []
         self.ego = None
 
         self.API = None
@@ -53,7 +54,7 @@ class Scenario():
             print('Error on loading scenario')
             return False
 
-    def prepare_scenario(self): # TODO: spawn traffic and ego, add carla filters
+    def prepare_scenario(self): # TODO: check Carla implementation, add Apollo
         if self.kwargs['simuator'].lower() == 'carla':
             self.API = CarlaAPI(**self.kwargs)
         elif self.kwargs['simuator'].lower() == 'apollo':
@@ -63,10 +64,18 @@ class Scenario():
             print('Unsupported simulator "{}" provided'.format(self.kwargs['simulator']))
         
         #spawn traffic vehicles
-        self.API.spawn_traffic(**self.kwargs)
+        self.traffic = self.API.spawn_traffic(**self.kwargs)
         #spawn ego
-        self.API.spawn_ego(**self.kwargs)
-        pass
+        self.ego = self.API.spawn_ego(**self.kwargs)
+
+        #check what we have spawned
+        self.actors = [self.ego] + self.traffic
+        if not all(self.actors):
+            print(self.actors)
+            print('Some actors are None')
+            return False
+        return True
+
     
     def launch_scenario(self): # TODO: Start moving vehicles, pass to planner routing request
         #Get everything moving, maybe start recording data
