@@ -1,4 +1,3 @@
-
 class SimAPI(object):
     def __init__(self, **kwargs):
         pass
@@ -14,3 +13,4 @@ class SimAPI(object):
     
     def move_vehicle(self):
         raise NotImplementedError
+        
