@@ -6,6 +6,7 @@ class DataReader():
         self.actors = []
         self.ego = None
         self.stop = None
+        
     def read_data(self, filename):
         self.file = ET.parse(filename)
         if self.file is None:
@@ -123,3 +124,6 @@ class DataReader():
 
     def get_ego(self):
         return self.ego
+    
+    def get_stop(self):
+        return self.stop
