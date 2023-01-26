@@ -20,7 +20,7 @@ class CarlaAPI(SimAPI):
     world = None
 
     def __init__(self, **kwargs):
-        super(SimAPI, self).__init__(kwargs)
+        super(SimAPI, self).__init__(**kwargs)
         self.client = carla.Client(kwargs['host'], kwargs['port'])
         if kwargs['timeout']:
             self.client.set_timeout(kwargs['timeout'])
@@ -65,7 +65,7 @@ class CarlaAPI(SimAPI):
             actor.set_autopilot(False)
         return actor
 
-    def spawn_vehicle(self, vehicle_data): # TODO: add vehicle spawning
+    def spawn_vehicle(self, vehicle_data): # TODO: check
         actor = None
         tries = 0
         while actor is None and tries <= 10:
@@ -75,5 +75,10 @@ class CarlaAPI(SimAPI):
                 print('Cannot spawn actor at {}. Try #{}'.format(vehicle_data[0], tries))
         return actor
     
+    def set_autopilot(self, actor_list):
+        for actor in actor_list:
+            actor.set_autopilot(True)
+            
     def move_vehicle(self, **kwargs): # TODO: add vehicle moving via its id or instance
+        # obstacle.set_transform(new_trans)
         raise NotImplementedError
