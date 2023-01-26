@@ -1,0 +1,12 @@
+<root>
+    <simulator>Carla</simulator>
+    <host>172.17.0.1</host>
+    <port>2000</port>
+    <timeout>30.0</timeout>
+    <fps>30.0</fps>
+    <traffic_filter>vehicle.dodge.charger_police</traffic_filter>
+    <traffic_autopilot>True</traffic_autopilot>
+    <ego_filter>vehicle.lincoln.mkz*</ego_filter>
+    <autostart>True</autostart>
+    <prefix></prefix>
+</root>
